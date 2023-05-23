@@ -1,0 +1,19 @@
+apiVersion: v1
+kind: Service
+metadata:
+  creationTimestamp: null
+  labels:
+    app.kubernetes.io/created-by: application-service
+    app.kubernetes.io/instance: auto-report-rf0b
+    app.kubernetes.io/managed-by: kustomize
+    app.kubernetes.io/name: auto-report-rf0b
+    app.kubernetes.io/part-of: auto-report
+  name: auto-report-rf0b
+spec:
+  ports:
+  - port: 8080
+    targetPort: 8080
+  selector:
+    app.kubernetes.io/instance: auto-report-rf0b
+status:
+  loadBalancer: {}
