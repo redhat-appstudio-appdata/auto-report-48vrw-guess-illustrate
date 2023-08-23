@@ -1,0 +1,17 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: auto-report-rf0b
+spec:
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/redhat-user-workloads/rhtap-migration-tenant/auto-report/auto-report-rf0b@sha256:5fb61228d304f6d93e2fc177ad018246488459820b63352868e32dc017cc9b52
+        name: container-image
+        resources: {}
+status: {}
